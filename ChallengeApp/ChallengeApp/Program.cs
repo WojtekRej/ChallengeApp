@@ -9,4 +9,5 @@ User user5 = new User("Wiesiek", "1234567890");
 user1.AddScore(5);
 user1.AddScore(2);
 var result = user1.Result;
+
 Console.WriteLine(result);
