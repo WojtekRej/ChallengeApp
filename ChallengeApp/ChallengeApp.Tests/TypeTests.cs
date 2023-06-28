@@ -36,8 +36,8 @@
         public void GetUserShouldReturnDifferentObjects()
         {
             // arrange - przygotowujemy
-            var user1 = GetUser("Tadek");
-            var user2 = GetUser("Tadek");
+            var user1 = GetUser("Wojtek", "Rej");
+            var user2 = GetUser("Tadek", "Kot");
 
             // act - uruchamiamy
 
@@ -45,9 +45,9 @@
             Assert.AreNotEqual(user1, user2);
         }
 
-        private User GetUser(string name)
+        private Employee GetUser(string name, string surname)
         {
-            return new User(name);
+            return new Employee(name, surname);
         }
     }
 }
