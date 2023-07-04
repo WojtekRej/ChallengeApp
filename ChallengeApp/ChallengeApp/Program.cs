@@ -1,12 +1,18 @@
 ﻿using ChallengeApp;
 
 var employee = new Employee("Wojtek", "Rej");
+employee.AddGrade("Kot");
+employee.AddGrade("4000");
+employee.AddGrade(7f);
+employee.AddGrade(5);
 employee.AddGrade(3);
-employee.AddGrade(3);
-employee.AddGrade(4);
 var statistics = employee.GetStatistics();
-Console.WriteLine($"Average: {statistics.Average:N2}");
-Console.WriteLine($"Max: {statistics.Max}");
-Console.WriteLine($"Min: {statistics.Min}");
+
+// Ctrl + K + C szybki komentarz
+// Ctrl + K + U zdjęcie komentarza
+
+Console.WriteLine($"average: {statistics.Average:n2}");
+Console.WriteLine($"max: {statistics.Max}");
+Console.WriteLine($"min: {statistics.Min}");
 
 
